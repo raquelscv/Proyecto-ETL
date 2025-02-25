@@ -87,3 +87,16 @@ def scrap_info_eventos(url):
             info_eventos["ciudad"].append("Madrid")
             
     return info_eventos
+
+def extraer_datos(url_selenium, url_api, archivo_salida_selenium, archivo_salida_api):
+    
+    dictio_final_hoteles = scrap_info_hoteles(url_selenium, sleep_time=5)
+    df_hoteles_competencia = pd.DataFrame(dictio_final_hoteles)
+    df_hoteles_competencia.to_pickle(archivo_salida_selenium)
+
+    dictio_final_eventos = scrap_info_eventos(url_api)
+    df_eventos = pd.DataFrame(dictio_final_eventos)
+    df_eventos.to_pickle(archivo_salida_api)
+
+    return df_hoteles_competencia, df_eventos
+

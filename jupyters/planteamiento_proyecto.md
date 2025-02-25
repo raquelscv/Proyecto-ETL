@@ -24,7 +24,7 @@ CREATE TABLE hoteles (
     id_hotel SERIAL PRIMARY KEY, -- Puede ser VARCHAR(5)
     nombre_hotel TEXT,
     competencia BOOL,
-    estrellas FLOAT CHECK (valoracion BETWEEN 1 AND 5),
+    estrellas FLOAT CHECK (estrellas BETWEEN 1 AND 5),
     id_ciudad INT REFERENCES ciudad(id_ciudad) ON DELETE CASCADE
 );
 CREATE TABLE clientes (

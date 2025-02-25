@@ -120,3 +120,16 @@ def creacion_tabla_reservas(conn, cur, dataframe):
         VALUES (%s, %s, %s, %s, %s, %s, %s)
     """
     insercion_db(conn, cur, insert_query, data_to_insert)
+
+def crear_tablas(nombre_db, usuario, contraseña, servidor, puerto, df, df_eventos, df_hoteles_competencia):
+
+    conn, cur = conex_bd_creacion_cursor(nombre_db, usuario, contraseña, servidor, puerto)
+
+    creacion_tabla_ciudad(conn, cur, df)
+    creacion_tabla_eventos(conn, cur, df_eventos)
+    creacion_tabla_hoteles(conn, cur, df, df_hoteles_competencia)
+    creacion_tabla_clientes(conn, cur, df)
+    creacion_tabla_reservas(conn, cur, df)
+
+    cur.close()
+    conn.close()
