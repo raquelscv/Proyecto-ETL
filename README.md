@@ -28,7 +28,7 @@ Finalmente, como paso adicional, realizamos algunas consultas SQL para verificar
 │   ├── soporte_scrapeo.py         # Funciones para el scraping (Selenium y API)  
 │   ├── soporte_carga.py           # Funciones para la carga en la base de datos  
 │  
-├── Consultas-BD.sql              # Consultas SQL para verificar y analizar los datos  
+├── consultas-bd.sql              # Consultas SQL para verificar y analizar los datos  
 ├── main.py                       # Script principal que ejecuta el proceso ETL completo  
 ├── planteamiento_proyecto.md      # Documento con el enunciado y estructura de la base de datos  
 ├── .gitignore                     # Archivo para ignorar archivos innecesarios en el repositorio  
@@ -59,9 +59,9 @@ Este proyecto ha sido desarrollado en Python 3.13.0 y utiliza las siguientes lib
 
 ## 💡Próximos Pasos
 
-Si hubiera dispuesto de más tiempo, el control de flujo y la gestión de errores, así como la documentación de las funciones podrían haberse mejorado no solo en el archivo main.py, sino en las funciones de las tres fases del proceso ETL. En cuanto a la extracción de eventos, habría sido útil ser más detallado en la información obtenida. Por ejemplo, en el horario del evento, incluir también los días de la semana en los que ocurren, aparte de la hora. También, me hubiese gustado haber podido profundizar en la relación entre la ubicación de los hoteles y sus precios. 
+En cuanto al código, quizás trataría de mejorar y completar más el control de flujo y la gestión de errores, así como la documentación de las funciones, no solo en el archivo main.py, sino en las funciones de las tres fases del proceso ETL. También, en la extracción de eventos habría sido útil obtener más información sobre el horario del evento por ejemplo, incluyendo también los días de la semana en los que ocurren, aparte de la hora. 
 
-Por otro lado, de cara a un futuro, sería interesante explorar cómo automatizar la extracción de datos y la carga a la base de datos para facilitar la actualización periódica de los datos sin intervención manual.
+En un futuro me gustaría poder profundizar en el análisis, por ejemplo en la relación entre la ubicación concreta de los hoteles y sus precios por noche. Además, sería muy interesante explorar cómo automatizar el proceso de manera que por ejemplo la extracción se realizase de forma periódica y automática cada cierto tiempo, sin necesidad de intervención manual, garantizando que los datos en la base de datos estén siempre actualizados.
 
 ## 🤝 Contribuciones
 Agradezco cualquier contribución que pueda mejorar el proyecto. Si tienes alguna idea que aportar no dudes en contactar conmigo!
