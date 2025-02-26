@@ -59,7 +59,7 @@ Este proyecto ha sido desarrollado en Python 3.13.0 y utiliza las siguientes lib
 
 ## 💡Próximos Pasos
 
-Si hubiera dispuesto de más tiempo, el control de flujo y la gestión de errores podrían haberse mejorado no solo en el archivo main.py, sino en las funciones de las tres fases del proceso ETL (extracción, transformación y carga). En cuanto a la extracción de eventos, habría sido útil ser más detallado en la información obtenida. Por ejemplo, en el horario del evento, incluir también los días de la semana en los que ocurren, aparte de la hora. También, me hubiese gustado haber podido profundizar en la relación entre la ubicación de los hoteles y sus precios. 
+Si hubiera dispuesto de más tiempo, el control de flujo y la gestión de errores, así como la documentación de las funciones podrían haberse mejorado no solo en el archivo main.py, sino en las funciones de las tres fases del proceso ETL. En cuanto a la extracción de eventos, habría sido útil ser más detallado en la información obtenida. Por ejemplo, en el horario del evento, incluir también los días de la semana en los que ocurren, aparte de la hora. También, me hubiese gustado haber podido profundizar en la relación entre la ubicación de los hoteles y sus precios. 
 
 Por otro lado, de cara a un futuro, sería interesante explorar cómo automatizar la extracción de datos y la carga a la base de datos para facilitar la actualización periódica de los datos sin intervención manual.
 
