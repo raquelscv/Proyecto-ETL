@@ -1,7 +1,7 @@
 import os 
 from dotenv import load_dotenv
 from src.soporte_carga import crear_tablas
-from src.soporte_excrapeo import extraer_datos
+from src.soporte_scrapeo import extraer_datos
 from src.soporte_limpieza_transf import limpieza_transformacion
 
 load_dotenv()
